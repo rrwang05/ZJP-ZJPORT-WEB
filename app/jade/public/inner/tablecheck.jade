@@ -1,0 +1,228 @@
+.tablecheck
+	.tablefill
+		.result-title.uniq-top-border
+			span 综试区简介
+		form(method="post", action="xx.jspa")
+			table.tablefill-table
+				colgroup
+					col(width="16%")
+					col(width="34%")
+					col(width="16%")
+					col(width="34%")
+
+				tbody
+					tr
+						th
+							.cel-right.tablefill-th
+								span IMO号码
+						td.cel-left
+							span 12345SDFF5550006
+						th
+							.cel-right.tablefill-th
+								span IMO号码
+						td.cel-left
+							span 12345SDFF5550006
+
+					tr
+						th
+							.cel-right.tablefill-th
+								span 船舶呼号
+						td.cel-left
+							span 12345SDFF5550006
+						th
+							.cel-right.tablefill-th
+								span 船舶呼号
+						td.cel-left
+							span 12345SDFF5550006
+
+					tr
+						th
+							.cel-right.tablefill-th
+								span 国籍证书签发日期
+						td.cel-left
+							span 具体文字内容
+						th
+							.cel-right.tablefill-th
+								span 国籍证书签发日期
+						td.cel-left
+							span 具体文字内容
+
+					tr
+						th
+							.cel-right.tablefill-th
+								span 国籍证书签发日期
+						td.cel-left
+							span 具体文字内容
+						th
+							.cel-right.tablefill-th
+								span 
+									em.tablefill-required-ico *
+									| 国籍证书签发日期
+						td.cel-left
+							span 具体文字内容
+
+	.result
+		//- .result-operations
+		//- 	a#J-addDialogTest.btn.btn-result.J-btn
+		//- 		i.ico-font.btn-result-ico &#xe610;
+		//- 		span 增 加
+		//- 	a#J-updateDialogTest.btn.btn-result.J-btn
+		//- 		i.ico-font.btn-result-ico &#xe604;
+		//- 		span 修 改
+		//- 	a#J-deleteDialogTest.btn.btn-result.J-btn
+		//- 		i.ico-font.btn-result-ico &#xe60e;
+		//- 		span 删 除
+		//- 	a#J-confirmDialogBtn.btn.btn-result.J-btn
+		//- 		i.ico-font.btn-result-ico &#xe608;
+		//- 		span 提 交
+		//- 	a#J-approvalDialogBtn.btn.btn-result.J-btn
+		//- 		i.ico-font.btn-result-ico &#xe609;
+		//- 		span 审 批
+		//- 	a#J-invalidDialogBtn.btn.btn-result.btn-result-sprites.J-btn
+		//- 		//- i.ico-font.btn-result-ico &#xe612;
+		//- 		i.ico-font-sprites.btn-result-ico-distract
+		//- 		span 作 废
+		//- 	a#J-vettedDialogBtn.btn.btn-result.btn-result-sprites.J-btn
+		//- 		//- i.ico-font.btn-result-ico &#xe608;
+		//- 		i.ico-font-sprites.btn-result-ico-checkOk
+		//- 		span 审核通过
+		//- 	a#J-unvettedDialogBtn.btn.btn-result.btn-result-sprites.J-btn
+		//- 		//- i.ico-font.btn-result-ico &#xe608;
+		//- 		i.ico-font-sprites.btn-result-ico-checkFail
+		//- 		span 审核不通过
+		.result-title-container
+			.result-title.uniq-top-border
+				span 综试区简介
+
+		.result-list
+			table.result-table
+				colgroup
+					col
+					col
+					col
+					col
+					col
+					col
+					col
+					col
+					col
+					col
+
+				thead
+					tr
+
+						th.cel-left
+							span 运单号
+						th.cel-right
+							span 发车网点 
+						th
+							span 单位名称
+						th
+							span 装车单号
+						th
+							span 司机 
+						th
+							span 司机电话
+						th
+							span 车费付款方式
+						th
+							span 司机电话
+						th
+							span 车费付款方式
+						th
+							span 车费付款方式
+						
+
+				tbody#J-resultContainer
+					tr
+						td.cel-left
+							span 左对齐
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center
+							span 13554385058
+					tr
+						td.cel-left
+							span 左对齐
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center
+							span 13554385058
+					tr
+						td.cel-left
+							span 左对齐
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center
+							span 13554385058
+					tr.tr__is-page
+						td.cel-page(colspan="10")
+							mixin mx_page('page_flat page_right')
+
+	.tablefill
+		.result-title.uniq-top-border
+			span 审批信息
+		form(method="post", action="xx.jspa")
+			table.tablefill-table
+				colgroup
+					col(width="20%")
+					col(width="80%")
+
+				tbody
+
+					tr
+						th.cel-right
+							span
+								| 审批意见
+						td.cel-left
+							textarea(type="text", placeholder="请输入内容", row="3").inp.inp-tablefill-textarea
+
+					tr
+						td(colspan="4").cel-center
+							.flex.flex-pack-center.flex-align-center.tablefill-operation
+								a(href="javascript:;", data-confirm-params="aa=01&&bb=02").btn.btn-tablefill.J-btn.J-confirmBtn
+									| 审批通过
+								a(href="#").btn.btn-tablefill.J-btn
+									| 返 回

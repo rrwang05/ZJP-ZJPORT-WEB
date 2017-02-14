@@ -1,0 +1,66 @@
+include ../variable/global.jade
+
+- var cssRoot  = rootDir + '/css'
+- var jsRoot   = rootDir + '/scripts'
+- var imgRoot  = rootDir + '/images'
+- var htmlRoot = rootDir + '/view'
+
+//- - var navIndex = 0
+
+include ../mixin/page.jade
+
+doctype html
+html
+	head
+		meta(charset = 'utf-8')
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		block head-title
+			title 网站标题
+		//- link(rel = 'shortcut icon', type = 'image/x-icon', href = '#{rootDir}/favicon.ico')
+		block head-theme
+			link(rel = 'stylesheet' href = '#{cssRoot}/inner.css')
+			//- // build:css css/base.css
+			//- link(rel = 'stylesheet' href = '#{bowerComponentsDir}/normalize.css/normalize.css')
+			//- link(rel = 'stylesheet' href = '#{cssRoot}/reset.css')
+			//- link(rel = 'stylesheet' href = '#{cssRoot}/common.css')
+			//- // endbuild
+		include ../public/config/config.jade
+		block head-script
+			script(src = '#{jsRoot}/lib/requirejs-config/inner.js')
+		block head-requirejs-script
+			//- script.
+			//- 	require.baseUrl = '../..' + require.baseUrl;
+			//- 	require.paths.inner = '../app/inner/module';
+			//- 	require.deps = ['inner/btn-base','inner/moreSearch'];
+			script(src = '#{jsRoot}/lib/requirejs/require.js' data-main="inner/main")
+	body
+
+		#main-page
+			.manage-content
+				block crumbs
+					include ../public/inner/crumbs.jade
+
+				.manage-content-container
+					block search
+						.space.space-t10
+						include ../public/inner/search-unfold.jade
+						//- include ../public/inner/search.jade
+
+					block sysprompt
+					//- 	.space.space-t10
+					//- 	.sysnotice
+					//- 		i.ico-font &#xe602;
+					//- 		strong 系统提示：
+					//- 		span 您当前的提现余额为USD3333.00
+
+
+					block result
+						include ../public/inner/result.jade
+
+					block others
+
+		block modal
+
+
+	block floor-script
+		script(src = '#{jsRoot}/lib/autoheight/main.js')

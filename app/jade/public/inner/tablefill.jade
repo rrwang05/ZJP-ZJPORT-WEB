@@ -1,0 +1,169 @@
+.tablefill
+	.result-title.uniq-top-border
+		span 综试区简介
+	form(method="post", action="xx.jspa")
+		table.tablefill-table
+			colgroup
+				col(width="16%")
+				col(width="34%")
+				col(width="16%")
+				col(width="34%")
+
+			tbody
+				tr
+					th
+						.cel-right.tablefill-th
+							span IMO号码
+					td.cel-left
+						select.inp.inp-select
+							option(value="a01") 请选择内容
+							option(value="a02") 请选择内容
+					th
+						.cel-right.tablefill-th
+							span IMO号码
+					td.cel-left
+						span 12345SDFF5550006
+
+				tr
+					th
+						.cel-right.tablefill-th
+							span 船舶呼号
+					td.cel-left
+						.tablefill-controller
+							input(type="text", id="bb" data-equalto="#cc" placeholder="请输入内容", data-required="ture" data-type="number" data-regexp="^([0-9][0-9]*)+(.[0-9]{0,5})?$" data-rangelength="[1, 8]").inp.inp-tablefill
+					th
+						.cel-right.tablefill-th
+							span 船舶呼号
+					td.cel-left
+						span 12345SDFF5550006
+
+				tr
+					th
+						.cel-right.tablefill-th
+							span 国籍证书签发日期
+					td.cel-left
+						.tablefill-controller
+							input(type="text", onclick="WdatePicker()").inp.inp-time.Wdate.inp-tablefill
+					th
+						.cel-right.tablefill-th
+							span 
+								em.tablefill-required-ico *
+								| 国籍证书签发日期
+					td.cel-left
+						.tablefill-controller
+							input(type="text", onclick="WdatePicker()").inp.inp-time.Wdate.inp-time-form
+							span.inpt-time-apart 至
+							input(type="text", onclick="WdatePicker()").inp.inp-time.Wdate.inp-time-to
+
+				tr
+					th
+						.cel-right.tablefill-th
+							span 船舶种类代码
+					td.cel-left
+						.tablefill-controller
+							input(type="text", id="cc"  data-equalto="#bb" required="true"  placeholder="请输入内容").inp.inp-tablefill
+					th
+						.cel-right.tablefill-th
+							span 船舶种类代码
+					td.cel-left
+						.tablefill-controller
+							input(type="text", placeholder="请输入内容").inp.inp-tablefill
+
+				tr
+					th
+						.cel-right.tablefill-th
+							span 船舶通讯方式类别
+					td.cel-left
+						.tablefill-controller
+							input(type="text", placeholder="请输入内容").inp.inp-tablefill
+					th
+						.cel-right.tablefill-th
+							span 
+								em.tablefill-required-ico *
+								| 船舶通讯方式类别
+					td.cel-left
+						.tablefill-controller
+							input(type="text", placeholder="请输入内容").inp.inp-tablefill
+
+				tr
+					th
+						.cel-right.tablefill-th
+							span 
+								em.tablefill-required-ico *
+								| 载重吨位
+					td.cel-left
+						.tablefill-controller
+							input(type="checkbox", name="a1").inp-checkbox
+							label.tablefill-pr10
+								| 选择1
+							input(type="checkbox", name="a1").inp-checkbox
+							label
+								| 选择2
+					th
+						.cel-right.tablefill-th
+							span 载重吨位/吨
+					td.cel-left
+						.tablefill-controller
+							input(type="text", placeholder="请输入内容").inp.inp-tablefill
+
+
+				tr
+					th
+						.cel-right.tablefill-th
+							span 
+								em.tablefill-required-ico *
+								| 船高
+					td.cel-left
+						.tablefill-controller
+							input(type="radio", name="b2").inp-radio
+							label.tablefill-pr10
+								| 是
+							input(type="radio", name="b2").inp-radio
+							label
+								| 否
+					th
+						.cel-right.tablefill-th
+							span 船高/米
+					td.cel-left
+						.tablefill-controller
+							input(type="text", placeholder="请输入内容").inp.inp-tablefill
+
+				tr
+					th
+						.cel-right.tablefill-th
+							span
+								| 船公司协议书
+					td.cel-left
+						.inp-file-controller
+							input(type="type",name="", readonly).inp.inp-file-name.J-inpFileSelectName
+							input(type="file", value="浏览", accept="image/png, image/gif, image/jpg, image/jpeg", data-url="./a.php").inp-file.J-inpFileSelect#uploadFile
+							span 浏览...
+						//- #progress
+						//- 	.bar(style="width: 0%; height: 18px; background: green;")
+						a(href="javascript:;").inp-file-upload.btn-upload.J-btn#uploadBtn
+							| 上 传
+						//- input(type="file", value="上 传").inp-file-upload.btn-upload.J-btn#uploadBtn
+
+					th
+						.cel-right.tablefill-th
+							span 市场占有率/%
+					td.cel-left
+						.tablefill-controller
+							input(type="text", placeholder="请输入内容").inp.inp-tablefill
+
+				tr
+					th
+						.cel-right.tablefill-th.flex.flex-align-center
+							span.cel-display-inline
+								| 船舶呼号
+					td(colspan="3").cel-left
+						textarea(type="text", placeholder="请输入内容", row="3").inp.inp-tablefill-textarea
+
+				tr
+					td(colspan="4").cel-center
+						.flex.flex-pack-center.flex-align-center.tablefill-operation
+							a(href="javascript:;", data-confirm-params="aa=01&&bb=02").btn.btn-tablefill.J-btn.J-confirmBtn
+								| 保 存
+							a(href="#").btn.btn-tablefill.J-btn
+								| 返 回
+

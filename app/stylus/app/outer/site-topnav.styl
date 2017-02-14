@@ -1,0 +1,93 @@
+.site-topnav-container
+    font-size $siteNormalFontSize
+    height 32px
+    line-height 32px
+    padding 0px 22px
+    background #f4f4f4
+    color $siteTopnavFontColor
+    .site-topnav-left
+        float left
+        width 50%
+    .site-topnav-right
+        display inline-block
+        float right
+        text-align right
+        width 50%
+        .site-topnav-userinfo
+            padding: 0px 10px 0px 4px
+            color $siteTopnavFontColor
+            &:hover
+                color $sitTopnavHover
+                text-decoration none
+        .site-topnav-exit
+            padding-left 10px
+            color $siteTopnavFontColor
+            &:hover
+                color $sitTopnavHover
+                text-decoration underline
+        
+        .menu
+            position: relative
+            display:  inline-block
+            cursor: pointer
+            z-index: 2
+            .menu-content
+                display: none
+                position: absolute
+                left: 0
+                top: 100%
+                width: 100%
+            .menu-wrap
+                border: 1px solid #055fa6
+                background-color: #fff
+                padding: 8px 0
+                /.menu-arrow
+                    position: absolute
+                    left: 50%
+                    top: -11px
+                    display: inline-block
+                    width:0
+                    height: 0
+                    border: 6px solid
+                    font-size: 0
+                    line-height: 0
+                    border-color: transparent
+                    _border-color: red
+                    _filter: chroma(color=red)
+                    border-bottom-color: #055fa6
+                    margin-left: -6px
+                    .arrow-fillin
+                        position: absolute
+                        left: -5px
+                        top: -4px
+                        display: inline-block
+                        width: 0
+                        height: 0
+                        border: 5px solid 
+                        font-size: 0
+                        line-height: 0
+                        border-color: transparent
+                        _border-color: red
+                        _filter: chroma(color=red)
+                        border-bottom-color: #fff
+                /.menu-list
+                    .menu-block-linker
+                        display: block
+                        width: 100%
+                        height: 26px
+                        line-height: 26px
+                        text-align: center
+                        color: #055fa6
+                        &:hover
+                            color: #fff
+                            background: #31a1f3
+                            text-decoration: none
+            &.systemChangeBanner_is-open
+                .menu-content
+                    display: block
+                    
+                        
+                        
+                    
+
+

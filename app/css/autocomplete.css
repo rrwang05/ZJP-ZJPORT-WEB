@@ -1,0 +1,33 @@
+/**
+ * 文件: .css 
+ * 公司: 浙江电子口岸
+ * 作者: wangrr2018@gmail.com
+ * 时间: 2016-05-24 15:53:49
+ */
+.autocomplete-wrapper {
+  vertical-align: top;
+  display: block !important;
+}
+.autocomplete-hint-inp {
+  display: none;
+  color: #999;
+}
+.autocomplete-menu {
+  width: 100%;
+  margin-top: 1px;
+}
+.autocomplete-suggestions {
+  padding: 4px 0;
+  margin: 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #e3e3e3;
+}
+.autocomplete-suggestion {
+  line-height: 22px;
+  padding: 4px;
+}
+.autocomplete-is-under-cursor {
+  background-color: #08c;
+  color: #fff;
+}

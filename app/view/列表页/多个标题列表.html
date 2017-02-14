@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>网站标题</title>
+    <link rel="stylesheet" href="../..//css/inner.css">
+    <script>
+      var _G = {
+        sideNavActive : -1,
+        jsPath: "../..//scripts",
+        cssPath: "../..//css"
+      }
+    </script>
+    <script src="../..//scripts/lib/requirejs-config/inner.js"></script>
+    <script src="../..//scripts/lib/calendar/WdatePicker.js"></script>
+    <script src="../..//scripts/lib/requirejs/require.js" data-main="inner/main"></script>
+  </head>
+  <body>
+    <div id="main-page">
+      <div class="manage-content">
+        <div id="inner-crumbs">
+          <div class="crumbs-container"><span>当前位置：</span><a href="#" class="crumbs-item">列表</a><span class="crumbs-item-drivers">></span><a class="crumbs-item">两行查询列表</a></div>
+        </div>
+        <div class="manage-content-container">
+          
+          <div class="result">
+            <div class="result-operations"><a href="#" target="_self" class="btn btn-result J-btn"><i class="ico-font btn-result-ico">&#xe610;</i><span>增 加</span></a><a id="J-updateDialogTest" class="btn btn-result J-btn"><i class="ico-font btn-result-ico">&#xe604;</i><span>修 改</span></a><a id="J-deleteDialogTest" class="btn btn-result J-btn"><i class="ico-font btn-result-ico">&#xe60e;</i><span>删 除</span></a><a id="J-confirmDialogBtn" class="btn btn-result J-btn"><i class="ico-font btn-result-ico">&#xe608;</i><span>提 交</span></a><a id="J-approvalDialogBtn" class="btn btn-result J-btn"><i class="ico-font btn-result-ico">&#xe609;</i><span>审 批</span></a><a id="J-invalidDialogBtn" class="btn btn-result btn-result-sprites J-btn"><i class="ico-font-sprites btn-result-ico-distract"></i><span>作 废</span></a><a id="J-vettedDialogBtn" class="btn btn-result btn-result-sprites J-btn"><i class="ico-font-sprites btn-result-ico-checkOk"></i><span>审核通过</span></a><a id="J-unvettedDialogBtn" class="btn btn-result btn-result-sprites J-btn"><i class="ico-font-sprites btn-result-ico-checkFail"></i><span>审核不通过</span></a></div>
+            <div class="result-title-container">		
+              <div class="result-title uniq-top-border result-tab J-tab">
+                <div class="result-tab-border-bottom"></div><a href="javascript:;" data-tab-target=".result-tab-C1" class="result-tab-item tb-item__active">综试区简介1</a><a href="javascript:;" data-tab-target=".result-tab-C2" class="result-tab-item">综试区简介2</a><a href="javascript:;" data-tab-target=".result-tab-C3" class="result-tab-item">综试区简介3</a>
+              </div>
+            </div>
+            <div class="result-list result-tab-content">
+              <div class="result-tab-C result-tab-C1 tc-item__active">
+                <table class="result-table">
+                  <colgroup>
+                    <col class="col-checkbox">
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>
+                        <input type="checkbox" class="inp-checkbox J-checkbox-all">
+                      </th>
+                      <th class="cel-left"><span>运单号</span></th>
+                      <th class="cel-right"><span>发车网点 </span></th>
+                      <th><span>单位名称</span></th>
+                      <th><span>装车单号</span></th>
+                      <th><span>司机 </span></th>
+                      <th><span>司机电话</span></th>
+                      <th><span>车费付款方式</span></th>
+                      <th><span>操作</span></th>
+                      <th><span>备注</span></th>
+                    </tr>
+                  </thead>
+                  <tbody id="J-resultContainer">
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" disabled class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="result-page">
+                  <div class="page page_flat page_right">
+                    <form><span class="pagination"><a class="pagination-mark pagination-mark_link pagination-mark_prev">上一页</a><a class="pagination-mark pagination-mark_link">1</a><span class="pagination-mark pagination-mark_current">2</span><a class="pagination-mark pagination-mark_link">3</a><span class="pagination-mark pagination-mark_elipses">...</span><a class="pagination-mark pagination-mark_link">100</a><span class="pagination-mark pagination-mark_link pagination-mark_next">下一页</span></span><span class="pageinfo"><span class="page-text">共10页</span></span><span class="pageskip"><span class="page-text">到第</span>
+                        <input value="0" class="pageskip-input"/><span class="page-text">页</span><a href="javascript:;" class="pageskip-btn">确认</a></span></form>
+                  </div>
+                </div>
+              </div>
+              <div class="result-tab-C result-tab-C2">
+                <table class="result-table">
+                  <colgroup>
+                    <col class="col-checkbox">
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>
+                        <input type="checkbox" class="inp-checkbox J-checkbox-all">
+                      </th>
+                      <th class="cel-left"><span>运单号2</span></th>
+                      <th class="cel-right"><span>发车网点 </span></th>
+                      <th><span>单位名称</span></th>
+                      <th><span>装车单号</span></th>
+                      <th><span>司机 </span></th>
+                      <th><span>司机电话</span></th>
+                      <th><span>车费付款方式</span></th>
+                      <th><span>操作</span></th>
+                      <th><span>备注</span></th>
+                    </tr>
+                  </thead>
+                  <tbody class="J-resultContainer">
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" disabled class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="result-page">
+                  <div class="page page_flat page_right">
+                    <form><span class="pagination"><a class="pagination-mark pagination-mark_link pagination-mark_prev">上一页</a><a class="pagination-mark pagination-mark_link">1</a><span class="pagination-mark pagination-mark_current">2</span><a class="pagination-mark pagination-mark_link">3</a><span class="pagination-mark pagination-mark_elipses">...</span><a class="pagination-mark pagination-mark_link">100</a><span class="pagination-mark pagination-mark_link pagination-mark_next">下一页</span></span><span class="pageinfo"><span class="page-text">共10页</span></span><span class="pageskip"><span class="page-text">到第</span>
+                        <input value="0" class="pageskip-input"/><span class="page-text">页</span><a href="javascript:;" class="pageskip-btn">确认</a></span></form>
+                  </div>
+                </div>
+              </div>
+              <div class="result-tab-C result-tab-C3">
+                <table class="result-table">
+                  <colgroup>
+                    <col class="col-checkbox">
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                    <col>
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>
+                        <input type="checkbox" class="inp-checkbox J-checkbox-all">
+                      </th>
+                      <th class="cel-left"><span>运单号3</span></th>
+                      <th class="cel-right"><span>发车网点 </span></th>
+                      <th><span>单位名称</span></th>
+                      <th><span>装车单号</span></th>
+                      <th><span>司机 </span></th>
+                      <th><span>司机电话</span></th>
+                      <th><span>车费付款方式</span></th>
+                      <th><span>操作</span></th>
+                      <th><span>备注</span></th>
+                    </tr>
+                  </thead>
+                  <tbody class="J-resultContainer">
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" disabled class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                    <tr>
+                      <td class="cel-center">
+                        <input type="checkbox" class="inp-checkbox J-checkbox-one">
+                      </td>
+                      <td class="cel-left cel-oper"><a href="javascript:;" data-dialog-params="aa=1&amp;&amp;bb=2" class="J-viewDialogTest">W29952012</a></td>
+                      <td class="cel-right"><span>右对齐</span></td>
+                      <td class="cel-center"><span>杭州</span></td>
+                      <td class="cel-center"><span>浙A 04572</span></td>
+                      <td class="cel-center"><span>2817320001</span></td>
+                      <td class="cel-center"><span>张三</span></td>
+                      <td class="cel-center"><span>13554385058</span></td>
+                      <td class="cel-center cel-oper"><a href="javacript:;" class="J-inrowUpdate">修改</a><a href="javacript:;" class="J-inrowDelete">删除</a></td>
+                      <td class="cel-center"><span> </span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="result-page">
+                  <div class="page page_flat page_right">
+                    <form><span class="pagination"><a class="pagination-mark pagination-mark_link pagination-mark_prev">上一页</a><a class="pagination-mark pagination-mark_link">1</a><span class="pagination-mark pagination-mark_current">2</span><a class="pagination-mark pagination-mark_link">3</a><span class="pagination-mark pagination-mark_elipses">...</span><a class="pagination-mark pagination-mark_link">100</a><span class="pagination-mark pagination-mark_link pagination-mark_next">下一页</span></span><span class="pageinfo"><span class="page-text">共10页</span></span><span class="pageskip"><span class="page-text">到第</span>
+                        <input value="0" class="pageskip-input"/><span class="page-text">页</span><a href="javascript:;" class="pageskip-btn">确认</a></span></form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../..//scripts/lib/autoheight/main.js"></script>
+</html>

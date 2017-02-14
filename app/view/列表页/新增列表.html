@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>网站标题</title>
+    <link rel="stylesheet" href="../..//css/inner.css">
+    <script>
+      var _G = {
+        sideNavActive : -1,
+        jsPath: "../..//scripts",
+        cssPath: "../..//css"
+      }
+    </script>
+    <script src="../..//scripts/lib/requirejs-config/inner.js"></script>
+    <script src="../..//scripts/lib/calendar/WdatePicker.js"></script>
+    <script src="../..//scripts/lib/requirejs/require.js" data-main="inner/main"></script>
+  </head>
+  <body>
+    <div id="main-page">
+      <div class="manage-content">
+        <div id="inner-crumbs">
+          <div class="crumbs-container"><span>当前位置：</span><a href="#" class="crumbs-item">列表</a><span class="crumbs-item-drivers">></span><a class="crumbs-item">两行查询列表</a></div>
+        </div>
+        <div class="manage-content-container">
+          
+          <div class="tablefill">
+            <div class="result-title uniq-top-border"><span>综试区简介</span></div>
+            <form method="post" action="xx.jspa">
+              <table class="tablefill-table">
+                <colgroup>
+                  <col width="16%">
+                  <col width="34%">
+                  <col width="16%">
+                  <col width="34%">
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <th>
+                      <div class="cel-right tablefill-th"><span>IMO号码</span></div>
+                    </th>
+                    <td class="cel-left">
+                      <select class="inp inp-select">
+                        <option value="a01">请选择内容</option>
+                        <option value="a02">请选择内容</option>
+                      </select>
+                    </td>
+                    <th>
+                      <div class="cel-right tablefill-th"><span>IMO号码</span></div>
+                    </th>
+                    <td class="cel-left"><span>12345SDFF5550006</span></td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="cel-right tablefill-th"><span>船舶呼号</span></div>
+                    </th>
+                    <td class="cel-left">
+                      <div class="tablefill-controller">
+                        <input type="text" id="bb" data-equalto="#cc" placeholder="请输入内容" data-required="ture" data-type="number" data-regexp="^([0-9][0-9]*)+(.[0-9]{0,5})?$" data-rangelength="[1, 8]" class="inp inp-tablefill">
+                      </div>
+                    </td>
+                    <th>
+                      <div class="cel-right tablefill-th"><span>船舶呼号</span></div>
+                    </th>
+                    <td class="cel-left"><span>12345SDFF5550006</span></td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="cel-right tablefill-th"><span>国籍证书签发日期</span></div>
+                    </th>
+                    <td class="cel-left">
+                      <div class="tablefill-controller">
+                        <input type="text" onclick="WdatePicker()" class="inp inp-time Wdate inp-tablefill">
+                      </div>
+                    </td>
+                    <th>
+                      <div class="cel-right tablefill-th"><span> <em class="tablefill-required-ico">*</em>国籍证书签发日期</span></div>
+                    </th>
+                    <td class="cel-left">
+                      <div class="tablefill-controller">
+                        <input type="text" onclick="WdatePicker()" class="inp inp-time Wdate inp-time-form"><span class="inpt-time-apart">至</span>
+                        <input type="text" onclick="WdatePicker()" class="inp inp-time Wdate inp-time-to">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="cel-right tablefill-th"><span>船舶种类代码</span></div>
+                    </th>
+                    <td class="cel-left">
+                      <div class="tablefill-controller">
+                        <input type="text" id="cc" data-equalto="#bb" required="true" placeholder="请输入内容" class="inp inp-tablefill">
+                      </div>
+                    </td>
+                    <th>
+                      <div class="cel-right tablefill-th"><span>船舶种类代码</span></div>
+                    </th>
+                    <td class="cel-left">
+                      <div class="tablefill-controller">
+                        <input type="text" placeholder="请输入内容" class="inp inp-tablefill">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="cel-right tablefill-th"><span>船舶通讯方式类别</span></div>
+                    </th>
+                    <td class="cel-left">
+                      <div class="tablefill-controller">
+                        <input type="text" placeholder="请输入内容" class="inp inp-tablefill">
+                      </div>
+                    </td>
+                    <th>
+                      <div class="cel-right tablefill-th"><span> <em class="tablefill-required-ico">*</em>船舶通讯方式类别</span></div>
+                    </th>
+                    <td class="cel-left">
+                      <div class="tablefill-controller">
+                        <input type="text" placeholder="请输入内容" class="inp inp-tablefill">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="cel-right tablefill-th"><span> <em class="tablefill-required-ico">*</em>载重吨位</span></div>
+                    </th>
+                    <td class="cel-left">
+                      <div class="tablefill-controller">
+                        <input type="checkbox" name="a1" class="inp-checkbox">
+                        <label class="tablefill-pr10">选择1</label>
+                        <input type="checkbox" name="a1" class="inp-checkbox">
+                        <label>选择2</label>
+                      </div>
+                    </td>
+                    <th>
+                      <div class="cel-right tablefill-th"><span>载重吨位/吨</span></div>
+                    </th>
+                    <td class="cel-left">
+                      <div class="tablefill-controller">
+                        <input type="text" placeholder="请输入内容" class="inp inp-tablefill">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="cel-right tablefill-th"><span> <em class="tablefill-required-ico">*</em>船高</span></div>
+                    </th>
+                    <td class="cel-left">
+                      <div class="tablefill-controller">
+                        <input type="radio" name="b2" class="inp-radio">
+                        <label class="tablefill-pr10">是</label>
+                        <input type="radio" name="b2" class="inp-radio">
+                        <label>否</label>
+                      </div>
+                    </td>
+                    <th>
+                      <div class="cel-right tablefill-th"><span>船高/米</span></div>
+                    </th>
+                    <td class="cel-left">
+                      <div class="tablefill-controller">
+                        <input type="text" placeholder="请输入内容" class="inp inp-tablefill">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="cel-right tablefill-th"><span>船公司协议书</span></div>
+                    </th>
+                    <td class="cel-left">
+                      <div class="inp-file-controller">
+                        <input type="type" name="" readonly class="inp inp-file-name J-inpFileSelectName">
+                        <input type="file" value="浏览" accept="image/png, image/gif, image/jpg, image/jpeg" data-url="./a.php" id="uploadFile" class="inp-file J-inpFileSelect"><span>浏览...</span>
+                      </div><a href="javascript:;" id="uploadBtn" class="inp-file-upload btn-upload J-btn">上 传</a>
+                    </td>
+                    <th>
+                      <div class="cel-right tablefill-th"><span>市场占有率/%</span></div>
+                    </th>
+                    <td class="cel-left">
+                      <div class="tablefill-controller">
+                        <input type="text" placeholder="请输入内容" class="inp inp-tablefill">
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>
+                      <div class="cel-right tablefill-th flex flex-align-center"><span class="cel-display-inline">船舶呼号</span></div>
+                    </th>
+                    <td colspan="3" class="cel-left">
+                      <textarea type="text" placeholder="请输入内容" row="3" class="inp inp-tablefill-textarea"></textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="4" class="cel-center">
+                      <div class="flex flex-pack-center flex-align-center tablefill-operation"><a href="javascript:;" data-confirm-params="aa=01&amp;&amp;bb=02" class="btn btn-tablefill J-btn J-confirmBtn">保 存</a><a href="#" class="btn btn-tablefill J-btn">返 回</a></div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../..//scripts/lib/autoheight/main.js"></script>
+</html>

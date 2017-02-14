@@ -1,0 +1,64 @@
+extends ../../layout/dialog.jade
+
+block others
+	.dialog-content
+		
+		//- .dialog-title
+		//- 	span 服务注册新增
+		form#J-mainForm(action="../../test/test.jspa?z=111" method="POST")
+			table.dialog-table.dialog-table_humdrum
+				colgroup
+					col.dialog-col-th(style="width: 45%;")
+					col.dialog-col-td(style="width: 55%;")
+				tbody
+					tr
+						th
+							span.cell-title 拟开增值税发票金额（含税）
+						td
+							.cell-inp-wrap.J-controllerInp
+								input.inp.inp-dialog#J-autocp1(type="text" data-required="true")
+					tr
+						th
+							span.cell-title 拟开其他发票金额
+						td
+							.cell-inp-wrap.J-controllerInp
+								input.inp.inp-dialog#J-autocp2(type="text" data-required="true")
+					tr
+						th
+							span.cell-title 币种
+						td
+							.cell-inp-wrap.J-controllerInp
+								select.inp.inp-select
+									option(value="0") CNY
+									option(value="1") USD
+									option(value="2") EUR
+					tr
+						th
+							span.cell-title 退税率
+						td
+							.cell-inp-wrap.J-controllerInp
+								input.inp.inp-dialog(type="text" style="width: 60%;")
+								span %
+					tr
+						th
+							span.cell-title 提现余额
+						td
+							.cell-inp-wrap
+								span USD9.99
+								//- input.inp.inp-dialog(type="text")
+					tr
+						th
+							span.cell-title 您还需提现
+						td
+							.cell-inp-wrap
+								span USD9999.99
+								//- input.inp.inp-dialog(type="text")
+					
+			.hint.hint-friendly
+				span.hint-cont 测算结果仅供参考，如有疑问请咨询0571-967209
+
+			.dialog-operation
+				a.btn.btn-dialog.J-btn.J-dialogConfirm(data-confirm-params="_d=1&_a=112")
+					span 确 认
+				a.btn.btn-dialog.J-btn.J-dialogCancel
+					span 取 消

@@ -1,0 +1,83 @@
+.sideNav-container
+    .sideNav-group
+        .sideNav-group-title
+            display inline-block
+            height 38px
+            line-height @height
+            width 100%
+            box-sizing border-box
+            -webkit-box-sizing border-box
+            -moz-box-sizing border-box
+            color $siteNormalFontColor
+            font-size 1.4em
+            background $siteNormanBackground
+            border-top 1px solid $siteNormalBorder
+            border-bottom 1px solid $siteNormalBorder
+            margin-top -1px
+            position: relative
+            &:hover
+                text-decoration none
+            .sideNav-ico
+                padding-left:11px
+                padding-right 10px
+                color: #888
+            .sideNav-ico-trigle
+                position: absolute
+                right: 0px
+                top: 0
+                color: #888
+                padding-right 17px
+                vertical-align: middle
+            .ico-shrink
+                display none
+            .ico-spread
+                display inline-block
+            span
+                display: inline-block
+                line-height: 38px
+                vertical-align: middle
+        .sideNav-group-list
+            display none
+            .sideNav-linker
+                display block
+                line-height 36px
+                color #414141
+                font-size $siteNormalFontSize
+                padding 0px 13px 0px 11px
+                span
+                    display inline-block
+                    box-sizing border-box
+                    width 100%
+                    padding-left 13px
+                    border-bottom 1px dashed $siteNormalBorder
+                // &:hover
+                    // color #fff
+                    // font-weight bold
+                    // background $siteNormalBackgroundHover
+            // .sideNav-linker.sideNav-linker__is-active
+            //     color #fff
+            //     font-weight bold
+            //     background $siteNormalBackgroundHover
+
+    .sideNav-group.sideNav-group__is-open
+        .sideNav-group-title
+            
+            .ico-spread
+                display none
+            .ico-shrink
+                display inline-block
+
+        .sideNav-group-list
+            display block
+            .sideNav-linker.sideNav-linker__is-active
+                color #fff
+                font-weight bold
+                background $siteNormalBackgroundHover
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+extends ../../layout/login.jade
+
+block head-script
+	script(src = '#{jsRoot}/lib/requirejs-config/login.js')
+block head-requirejs-script
+	script(src = '#{jsRoot}/lib/requirejs/require.js' data-main="login/main")

@@ -1,0 +1,46 @@
+include ../variable/global.jade
+
+- var cssRoot  = rootDir + '/css'
+- var jsRoot   = rootDir + '/scripts'
+- var imgRoot  = rootDir + '/images'
+- var htmlRoot = rootDir + '/view'
+
+//- - var navIndex = 0
+
+include ../mixin/global.jade
+
+doctype html
+html
+  head
+    meta(charset = 'utf-8')
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    block head-title
+      title 网站标题
+    //- link(rel = 'shortcut icon', type = 'image/x-icon', href = '#{rootDir}/favicon.ico')
+    block head-theme
+      //- link(rel = 'stylesheet' href = '#{cssRoot}/inner.css')
+      //- link(rel = 'stylesheet' href = '#{cssRoot}/vld.css')
+      link(rel = 'stylesheet' href = '#{cssRoot}/dialog.css')
+
+      //- // build:css css/base.css
+      //- link(rel = 'stylesheet' href = '#{bowerComponentsDir}/normalize.css/normalize.css')
+      //- link(rel = 'stylesheet' href = '#{cssRoot}/reset.css')
+      //- link(rel = 'stylesheet' href = '#{cssRoot}/common.css')
+      //- // endbuild
+    include ../public/config/config.jade
+    block requirejs-config
+      script(src = '#{jsRoot}/lib/requirejs-config/inner-dialog.js')
+    block requirejs-script
+      script(src = '#{jsRoot}/lib/requirejs/require.js' data-main = 'dialog/dialog-main')
+  body
+
+    #main-page
+      .manage-content
+
+        block others
+
+
+
+
+  block floor-script
+    //- script(src = '#{jsRoot}/lib/autoheight/main.js')

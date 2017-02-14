@@ -1,0 +1,45 @@
+include ../variable/global.jade
+
+- var cssRoot  = rootDir + '/css'
+- var jsRoot   = rootDir + '/scripts'
+- var imgRoot  = rootDir + '/images'
+- var htmlRoot = rootDir + '/view'
+- var isShowChangeBanner = 1
+
+//- - var navIndex = 0
+
+include ../mixin/page.jade
+
+doctype html
+html
+	head
+		meta(charset = 'utf-8')
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		block head-title
+			title 网站标题
+		link(rel = 'shortcut icon', type = 'image/x-icon', href = '#{rootDir}/favicon.ico')
+		block head-theme
+			link(rel = 'stylesheet' href = '#{cssRoot}/login.css')
+		block head-script
+			//- script(src = '#{jsRoot}/lib/requirejs-config/login.js')
+		block head-requirejs-script
+			//- script(src = '#{jsRoot}/lib/requirejs/require.js' data-main="login/main")
+	body
+		#site-header
+			.site-header-container
+				block site-header
+					include ../public/outer/site-logo.jade
+
+		#site-login
+			.site-login-container
+				block site-login
+					include ../public/login/site-login.jade
+
+
+		#site-footer
+			block site-footer
+				include ../public/outer/site-footer.jade
+
+
+
+	block floor-script

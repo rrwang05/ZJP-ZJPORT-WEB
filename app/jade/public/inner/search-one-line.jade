@@ -1,0 +1,26 @@
+#search
+  .search-container.search-fold__one-line-search.J-searchContainer
+    form
+      .search-fieldset
+        .search-controller
+          label.field-label
+            span 车牌号
+          .field-group
+            input(type="text").field-inp-item.inp.inp-search
+
+        //- 时间选择
+        .search-controller
+            label.field-label
+              span 发车日期
+            .field-group.field-group-timerange
+              input(type="text", onclick="WdatePicker()").field-inp-item.inp.inp-search.inp-time.Wdate
+              span.field-group-timerange-to 至
+              input(type="text", onclick="WdatePicker()").field-inp-item.inp.inp-search.inp-time.Wdate
+        .search-controller
+          .search-operation.flex.flex-pack-center
+            a.btn.J-btn.btn-search.J-searchBtn
+              span 查 询
+            a.btn.J-btn.btn-search.J-resetBtn
+              span 重 置
+
+

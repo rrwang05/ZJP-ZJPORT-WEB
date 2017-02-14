@@ -1,0 +1,80 @@
+.result
+	.result-operations
+		a(href="#", target="_self").btn.btn-result.J-btn
+			i.ico-font.btn-result-ico &#xe610;
+			span 增 加
+		a#J-updateDialogTest.btn.btn-result.J-btn
+			i.ico-font.btn-result-ico &#xe604;
+			span 修 改
+		a#J-deleteDialogTest.btn.btn-result.J-btn
+			i.ico-font.btn-result-ico &#xe60e;
+			span 删 除
+		a#J-confirmDialogBtn.btn.btn-result.J-btn
+			i.ico-font.btn-result-ico &#xe608;
+			span 提 交
+		a#J-approvalDialogBtn.btn.btn-result.J-btn
+			i.ico-font.btn-result-ico &#xe609;
+			span 审 批
+		a#J-invalidDialogBtn.btn.btn-result.btn-result-sprites.J-btn
+			//- i.ico-font.btn-result-ico &#xe612;
+			i.ico-font-sprites.btn-result-ico-distract
+			span 作 废
+		a#J-vettedDialogBtn.btn.btn-result.btn-result-sprites.J-btn
+			//- i.ico-font.btn-result-ico &#xe608;
+			i.ico-font-sprites.btn-result-ico-checkOk
+			span 审核通过
+		a#J-unvettedDialogBtn.btn.btn-result.btn-result-sprites.J-btn
+			//- i.ico-font.btn-result-ico &#xe608;
+			i.ico-font-sprites.btn-result-ico-checkFail
+			span 审核不通过
+
+	.result-title-container
+		.result-title.uniq-top-border
+			span 综试区简介
+
+
+	.result-list
+		table.result-table
+			colgroup
+				col.col-checkbox
+				col
+				col
+				col
+				col
+				col
+				col
+				col
+				col
+				col
+
+			thead
+				tr
+					th
+						input.inp-checkbox.J-checkbox-all(type="checkbox")
+
+					th.cel-left
+						span 运单号
+					th.cel-right
+						span 发车网点 
+					th
+						span 单位名称
+					th
+						span 装车单号
+					th
+						span 司机 
+					th
+						span 司机电话
+					th
+						span 车费付款方式
+					th
+						span 操作
+					th
+						span 备注
+					
+
+			tbody#J-resultContainer
+				tr.tr__is-page
+					td.cel-center(colspan="10")
+						.hint-result.flex.flex-pack-center.flex-align-center
+							.hint-result-content.hint-result-content-loading
+								span 正在努力加载中，请稍后......

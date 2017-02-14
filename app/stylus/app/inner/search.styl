@@ -1,0 +1,91 @@
+#search
+    border 1px solid $siteNormalBorder
+    box-sizing border-box
+.search-container
+    position relative
+    padding 10px 10px 10px 0px
+    // width: 100%
+    background $siteNormanBackground
+    font-size $siteNormalFontSize
+    box-sizing border-box
+    .ico-toggle-shrink
+        display block
+    .ico-toggle-spread
+        display none
+
+
+    .search-fieldset
+        width:100%
+        $mx_clearfix()
+        /.search-controller
+            float left
+            width 33%
+            height 36px
+            line-height 36px
+            /.field-label
+                width 25%
+                display inline-block
+                float left
+                text-align right
+                span
+                    display inline-block
+                    padding-right 12px
+            /.field-group
+                float left
+                width 75%
+                .inp-search
+                    width 80%
+                .inp-time
+                    width 40%
+                .field-group-timerange-to
+                    padding 0px 2px
+                &.field-group-select
+                    .inp-select
+                        padding 0 4px
+                        width 80%
+                        option
+                            line-height 18px
+    /.search-operation
+        height 26px
+        padding-top 8px
+        text-align:center
+
+
+
+    &.search-fold__two-line-search
+        overflow hidden
+        .ico-toggle-shrink
+            display none
+        .ico-toggle-spread
+            display block
+        .search-fieldset
+            width: 100%
+            height 72px
+            overflow hidden
+            .search-controller
+                width 33%
+                .field-label
+                    width 25%
+                .field-group
+                    width 75%
+                    
+    &.search-fold__one-line-search
+        padding 5px 0
+        
+                
+
+    /.search-toggle-btn
+        position absolute
+        right 20px
+        top 14px
+        text-decoration none
+        font-size $siteNormalFontSize
+        color $siteNormalFontColor
+        &:hover
+            text-decoration none
+            color $siteNormalFontColor
+        i
+            color: #888
+            vertical-align middle
+
+

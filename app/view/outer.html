@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>网站标题</title>
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../css/outer.css">
+    <script>
+      var _G = {
+        sideNavActive : -1,
+        jsPath: "../scripts",
+        cssPath: "../css"
+      }
+    </script>
+    <script src="../scripts/lib/requirejs-config/outer.js"></script>
+    <script src="../scripts/lib/requirejs/require.js"></script>
+  </head>
+  <body>
+    <div id="main-page">
+      <div id="site-topnav">
+        <div class="site-topnav-container">
+          <div class="site-topnav-left"><span>欢迎来到系统界面标准规范！</span></div>
+          <div class="site-topnav-right"><span class="menu J-systemChangeBtn">欢迎您，admin<a href="#" class="ico-font site-topnav-userinfo">&#xe600;</a>
+              <div class="menu-content">
+                <div class="menu-wrap">
+                  <div class="menu-arrow">
+                    <div class="arrow-fillin"></div>
+                  </div>
+                  <div class="menu-list">
+                    <div class="menu-item"><a href="javascript:;" class="menu-block-linker">个人中心</a></div>
+                    <div class="menu-item"><a href="javascript:;" class="menu-block-linker">退出</a></div>
+                  </div>
+                </div>
+              </div></span><span>|</span><a href="#" target="_self" class="site-topnav-exit"><span>退出</span></a></div>
+        </div>
+      </div>
+      <div id="site-header">
+        <div class="site-header-container">
+          <div id="site-logo">
+            <div class="site-logo-container">
+              <div class="site-logo"></div>
+              <div class="site-theme"></div>
+              <div class="systemChangeBtn systemChangeBtn_is-show J-systemChangeBtn">系统切换<span class="ico-font ico-spread">&#xe600;</span><span class="ico-font ico-shink">&#xe601;</span>
+                <div class="systemChangeBanner-mask"></div>
+                <div class="systemChangeBanner">
+                  <ul class="systemChangeBanner-content">
+                    <li><span></span><a href="#" target="_blank">智能信息安全管理系统1</a></li>
+                    <li><span></span><a href="#" target="_blank">智能信息安全管理系统1</a></li>
+                    <li><span></span><a href="#" target="_blank">智能信息安全管理系统1</a></li>
+                    <li><span></span><a href="#" target="_blank">智能信息安全管理系统1</a></li>
+                    <li><span></span><a href="#" target="_blank">智能信息安全管理系统1</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="site-content">
+        <div class="main-content-container">
+          <div class="content-left">
+            <div id="sideNav">
+              <div class="sideNav-container">
+                <div class="sideNav-group J-group"><a class="sideNav-group-title J-group-title"><em class="ico-font sideNav-ico ico-spread">&#xe602;</em><em class="ico-font sideNav-ico ico-shrink">&#xe603;</em><span>列表</span><em class="ico-font sideNav-ico-trigle ico-spread">&#xe607;</em><em class="ico-font sideNav-ico-trigle ico-shrink">&#xe606;</em></a>
+                  <div class="sideNav-group-list"><a href="../view/列表页/两行查询列表.html" target="manage-inner" class="sideNav-linker J-group-linker"><span>两行查询列表</span></a><a href="../view/列表页/多行查询列表.html" target="manage-inner" class="sideNav-linker J-group-linker"><span>多行查询列表</span></a><a href="../view/列表页/标准列表.html" target="manage-inner" class="sideNav-linker J-group-linker"><span>标准列表</span></a><a href="../view/列表页/多个标题列表.html" target="manage-inner" class="sideNav-linker J-group-linker"><span>多个标题列表</span></a><a href="../view/列表页/查看列表.html" target="manage-inner" class="sideNav-linker J-group-linker"><span>查看列表</span></a><a href="../view/列表页/新增列表.html" target="manage-inner" class="sideNav-linker J-group-linker"><span>新增列表</span></a><a href="../view/列表页/审核.html" target="manage-inner" class="sideNav-linker J-group-linker"><span>审核</span></a>
+                  </div>
+                </div>
+                <div class="sideNav-group J-group"><a class="sideNav-group-title J-group-title"><em class="ico-font sideNav-ico ico-spread">&#xe602;</em><em class="ico-font sideNav-ico ico-shrink">&#xe603;</em><span>提示</span><em class="ico-font sideNav-ico-trigle ico-spread">&#xe607;</em><em class="ico-font sideNav-ico-trigle ico-shrink">&#xe606;</em></a>
+                  <div class="sideNav-group-list"><a href="../view/提示/数据加载中.html" target="manage-inner" class="sideNav-linker J-group-linker"><span>数据加载中</span></a><a href="../view/提示/查询无结果.html" target="manage-inner" class="sideNav-linker J-group-linker"><span>查询无结果</span></a><a href="../view/提示/输入查询条件.html" target="manage-inner" class="sideNav-linker J-group-linker"><span>输入查询条件</span></a><a href="../view/提示/404.html" target="manage-inner" class="sideNav-linker J-group-linker"><span>404</span></a><a href="../view/提示/500.html" target="manage-inner" class="sideNav-linker J-group-linker"><span>500</span></a></div>
+                </div>
+                <div class="sideNav-group J-group"><a class="sideNav-group-title J-group-title"><em class="ico-font sideNav-ico ico-spread">&#xe602;</em><em class="ico-font sideNav-ico ico-shrink">&#xe603;</em><span>弹出框</span><em class="ico-font sideNav-ico-trigle ico-spread">&#xe607;</em><em class="ico-font sideNav-ico-trigle ico-shrink">&#xe606;</em></a>
+                  <div class="sideNav-group-list"><a href="../view/弹出框页面/信息保存成功.html" target="manage-inner" class="sideNav-linker J-group-linker"><span>信息保存成功</span></a><a href="../view/弹出框页面/信息保存失败.html" target="manage-inner" class="sideNav-linker J-group-linker"><span>信息保存失败</span></a><a href="../view/弹出框页面/信息确认提示.html" target="manage-inner" class="sideNav-linker J-group-linker"><span>信息确认提示</span></a></div>
+                </div>
+                <div class="sideNav-group J-group"><a class="sideNav-group-title J-group-title"><em class="ico-font sideNav-ico ico-spread">&#xe602;</em><em class="ico-font sideNav-ico ico-shrink">&#xe603;</em><span>富文本编辑</span><em class="ico-font sideNav-ico-trigle ico-spread">&#xe607;</em><em class="ico-font sideNav-ico-trigle ico-shrink">&#xe606;</em></a>
+                  <div class="sideNav-group-list"><a href="../view/富文本编辑/富文本编辑器.html" target="manage-inner" class="sideNav-linker J-group-linker"><span>富文本编辑</span></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-right">
+            <div class="manage-frame">
+              <iframe id="J-manageFrame" src="../view/列表页/两行查询列表.html" frameborder="0" width="100%" name="manage-inner"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="site-footer">
+        <div class="site-footer--content">版权所有©2006 - 2016 <a href="#">浙江电子口岸有限公司</a></div>
+      </div>
+    </div>
+  </body>
+</html>

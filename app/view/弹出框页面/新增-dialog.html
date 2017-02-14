@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>网站标题</title>
+    <link rel="stylesheet" href="../..//css/dialog.css">
+    <script>
+      var _G = {
+        sideNavActive : -1,
+        jsPath: "../..//scripts",
+        cssPath: "../..//css"
+      }
+    </script>
+    <script src="../..//scripts/lib/requirejs-config/inner-dialog.js"></script>
+    <script src="../..//scripts/lib/requirejs/require.js" data-main="dialog/dialog-main"></script>
+  </head>
+  <body>
+    <div id="main-page">
+      <div class="manage-content">
+        <div class="dialog-content">
+          <form id="J-mainForm" action="../../test/test.jspa?z=111" method="POST">
+            <table class="dialog-table dialog-table_humdrum">
+              <colgroup>
+                <col style="width: 45%;" class="dialog-col-th">
+                <col style="width: 55%;" class="dialog-col-td">
+              </colgroup>
+              <tbody>
+                <tr>
+                  <th><span class="cell-title">拟开增值税发票金额（含税）</span></th>
+                  <td>
+                    <div class="cell-inp-wrap J-controllerInp">
+                      <input id="J-autocp1" type="text" data-required="true" class="inp inp-dialog">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th><span class="cell-title">拟开其他发票金额</span></th>
+                  <td>
+                    <div class="cell-inp-wrap J-controllerInp">
+                      <input id="J-autocp2" type="text" data-required="true" class="inp inp-dialog">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th><span class="cell-title">币种</span></th>
+                  <td>
+                    <div class="cell-inp-wrap J-controllerInp">
+                      <select class="inp inp-select">
+                        <option value="0">CNY</option>
+                        <option value="1">USD</option>
+                        <option value="2">EUR</option>
+                      </select>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th><span class="cell-title">退税率</span></th>
+                  <td>
+                    <div class="cell-inp-wrap J-controllerInp">
+                      <input type="text" style="width: 60%;" class="inp inp-dialog"><span>%</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th><span class="cell-title">提现余额</span></th>
+                  <td>
+                    <div class="cell-inp-wrap"><span>USD9.99</span>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th><span class="cell-title">您还需提现</span></th>
+                  <td>
+                    <div class="cell-inp-wrap"><span>USD9999.99</span>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="hint hint-friendly"><span class="hint-cont">测算结果仅供参考，如有疑问请咨询0571-967209</span></div>
+            <div class="dialog-operation"><a data-confirm-params="_d=1&amp;_a=112" class="btn btn-dialog J-btn J-dialogConfirm"><span>确 认</span></a><a class="btn btn-dialog J-btn J-dialogCancel"><span>取 消</span></a></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

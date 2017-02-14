@@ -1,0 +1,110 @@
+$systemChangeBannerWidth = 400px
+$systemChangeBannerHeight = 120px
+$systemChangeBtnHeight = 26px
+
+
+
+
+
+
+.site-logo-container
+    width 100%
+    height 115px
+    background #30a1f3
+    position relative
+    font-size: 12px
+    .site-logo
+        position absolute
+        left 30px
+        top 50%
+        width 53px
+        height 53px
+        margin-top -25px
+        background url('../images/sitetop/logo.png')
+    .site-theme
+        position absolute
+        left 100px
+        top 50%
+        width 286px
+        height 35px
+        margin-top -17px
+        background url('../images/sitetop/site-theme.png')
+    .systemChangeBtn
+        position: relative
+        cursor: pointer
+        display: none
+        position: absolute
+        left 400px
+        top: 50%
+        margin-top: -13px
+        width: 80px
+        height: $systemChangeBtnHeight
+        line-height: $systemChangeBtnHeight
+        color: #fff
+        border: 1px solid #fff
+        text-align: center
+        border-radius: 3px
+        &.systemChangeBtn_is-show
+            display block
+        .ico-font
+            vertical-align:middle
+            padding-left: 3px
+            color: #fff
+            display: none
+            &.ico-spread
+                display: inline-block
+        
+        .systemChangeBanner-mask
+            display: none
+            width: $systemChangeBannerWidth
+            height: $systemChangeBannerHeight
+            border-radius: 3px
+            position: absolute
+            left:0
+            top: $systemChangeBtnHeight + 1
+            background: #000
+            $mx_opacity(0.6)
+        .systemChangeBanner
+            display: none
+            width: $systemChangeBannerWidth
+            height: $systemChangeBannerHeight
+            position: absolute
+            left: 0
+            top: $systemChangeBtnHeight + 1
+            overflow: hidden
+        &.systemChangeBanner_is-open
+            .ico-font
+                display: none
+                &.ico-shink
+                    display: inline-block    
+            .systemChangeBanner-mask
+            .systemChangeBanner
+                display: block
+              
+    
+        .systemChangeBanner-content
+            padding: 10px 0
+            box-sizing: border-box
+            $mx_clearfix()
+            li
+                line-height: 32px
+                width: 200px
+                float: left    
+                box-sizing: border-box   
+                span
+                    display: inline-block
+                    width: 20px
+                    height: 20px
+                    background: url(../images/sitetop/system-change.png) no-repeat
+                    vertical-align: middle
+                a
+                    color: #fff
+                    text-decoration: none
+                    // vertical-align: baseline
+                    &:hover
+                        text-decoration: underline
+                        color: #fff        
+        
+            
+        
+

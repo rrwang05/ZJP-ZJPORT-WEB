@@ -1,0 +1,38 @@
+.site-login-controller
+	.site-login-background(style="background:url('../../images/login/login.jpg') no-repeat 35% 100%")
+
+	.site-login-box
+		.site-login-form-container
+			.site-login-form
+				form()
+					.site-login-form-title
+						| 登录
+					.site-login-form-error
+						span.ico
+						| 用户名不正确！
+					.site-login-form-controller
+						label
+						.site-login-form-inp
+							input(type="text", placeholder="用户名/邮箱", required)
+					.site-login-form-controller
+						label.password
+						.site-login-form-inp
+							input(type="text", placeholder="请输入登录密码")
+					.site-login-form-opera
+						a(href="#")
+							| 忘记密码？
+						a(href="#").site-login-form-rigest
+							| 注册账号
+					.site-login-form-code
+						input(type="text", placeholder="请输入验证码").site-login-form-codeinp
+						img(src="", width="69", height="32").site-login-form-codeimg
+						a(href="javascript:;").site-login-form-coderefresh
+							| 点击刷新
+					.site-login-form-btn
+						a(href="javascript:;").login-btn.J-loginConfirmBtn
+							| 登 录
+					.site-login-form-number
+						| 咨询热线：
+						span 
+							| 0571-967209
+

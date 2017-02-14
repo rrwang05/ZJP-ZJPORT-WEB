@@ -1,0 +1,831 @@
+.result
+	.result-operations
+		a(href="#", target="_self").btn.btn-result.J-btn
+			i.ico-font.btn-result-ico &#xe610;
+			span 增 加
+		a#J-updateDialogTest.btn.btn-result.J-btn
+			i.ico-font.btn-result-ico &#xe604;
+			span 修 改
+		a#J-deleteDialogTest.btn.btn-result.J-btn
+			i.ico-font.btn-result-ico &#xe60e;
+			span 删 除
+		a#J-confirmDialogBtn.btn.btn-result.J-btn
+			i.ico-font.btn-result-ico &#xe608;
+			span 提 交
+		a#J-approvalDialogBtn.btn.btn-result.J-btn
+			i.ico-font.btn-result-ico &#xe609;
+			span 审 批
+		a#J-invalidDialogBtn.btn.btn-result.btn-result-sprites.J-btn
+			//- i.ico-font.btn-result-ico &#xe612;
+			i.ico-font-sprites.btn-result-ico-distract
+			span 作 废
+		a#J-vettedDialogBtn.btn.btn-result.btn-result-sprites.J-btn
+			//- i.ico-font.btn-result-ico &#xe608;
+			i.ico-font-sprites.btn-result-ico-checkOk
+			span 审核通过
+		a#J-unvettedDialogBtn.btn.btn-result.btn-result-sprites.J-btn
+			//- i.ico-font.btn-result-ico &#xe608;
+			i.ico-font-sprites.btn-result-ico-checkFail
+			span 审核不通过
+
+	.result-title-container		
+		.result-title.uniq-top-border.result-tab.J-tab
+			.result-tab-border-bottom
+			a(href="javascript:;", data-tab-target=".result-tab-C1").result-tab-item.tb-item__active
+				| 综试区简介1
+			a(href="javascript:;", data-tab-target=".result-tab-C2").result-tab-item
+				| 综试区简介2
+			a(href="javascript:;", data-tab-target=".result-tab-C3").result-tab-item
+				| 综试区简介3
+
+
+	.result-list.result-tab-content
+		.result-tab-C.result-tab-C1.tc-item__active
+			table.result-table
+				colgroup
+					col.col-checkbox
+					col
+					col
+					col
+					col
+					col
+					col
+					col
+					col
+					col
+
+				thead
+					tr
+						th
+							input.inp-checkbox.J-checkbox-all(type="checkbox")
+
+						th.cel-left
+							span 运单号
+						th.cel-right
+							span 发车网点 
+						th
+							span 单位名称
+						th
+							span 装车单号
+						th
+							span 司机 
+						th
+							span 司机电话
+						th
+							span 车费付款方式
+						th
+							span 操作
+						th
+							span 备注
+						
+
+				tbody#J-resultContainer
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox" disabled)
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+			.result-page
+				mixin mx_page('page_flat page_right')
+		
+		.result-tab-C.result-tab-C2
+			table.result-table
+				colgroup
+					col.col-checkbox
+					col
+					col
+					col
+					col
+					col
+					col
+					col
+					col
+					col
+
+				thead
+					tr
+						th
+							input.inp-checkbox.J-checkbox-all(type="checkbox")
+
+						th.cel-left
+							span 运单号2
+						th.cel-right
+							span 发车网点 
+						th
+							span 单位名称
+						th
+							span 装车单号
+						th
+							span 司机 
+						th
+							span 司机电话
+						th
+							span 车费付款方式
+						th
+							span 操作
+						th
+							span 备注
+						
+
+				tbody.J-resultContainer
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox" disabled)
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+			.result-page
+				mixin mx_page('page_flat page_right')
+		
+		.result-tab-C.result-tab-C3
+			table.result-table
+				colgroup
+					col.col-checkbox
+					col
+					col
+					col
+					col
+					col
+					col
+					col
+					col
+					col
+
+				thead
+					tr
+						th
+							input.inp-checkbox.J-checkbox-all(type="checkbox")
+
+						th.cel-left
+							span 运单号3
+						th.cel-right
+							span 发车网点 
+						th
+							span 单位名称
+						th
+							span 装车单号
+						th
+							span 司机 
+						th
+							span 司机电话
+						th
+							span 车费付款方式
+						th
+							span 操作
+						th
+							span 备注
+						
+
+				tbody.J-resultContainer
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox" disabled)
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+					tr
+						td.cel-center
+							input.inp-checkbox.J-checkbox-one(type="checkbox")
+						td.cel-left.cel-oper
+							a(href="javascript:;", data-dialog-params="aa=1&&bb=2").J-viewDialogTest W29952012
+						td.cel-right
+							span 右对齐
+						td.cel-center
+							span 杭州
+						td.cel-center
+							span 浙A 04572
+						td.cel-center
+							span 2817320001
+						td.cel-center
+							span 张三
+						td.cel-center
+							span 13554385058
+						td.cel-center.cel-oper
+							a(href="javacript:;").J-inrowUpdate 修改
+							a(href="javacript:;").J-inrowDelete 删除
+						td.cel-center
+							span 
+			.result-page
+				mixin mx_page('page_flat page_right')
+

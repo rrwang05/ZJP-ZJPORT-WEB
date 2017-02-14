@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>网站标题</title>
+    <link rel="stylesheet" href="../..//css/inner.css">
+    <script>
+      var _G = {
+        sideNavActive : -1,
+        jsPath: "../..//scripts",
+        cssPath: "../..//css"
+      }
+    </script>
+    <script src="../..//scripts/lib/requirejs-config/inner.js"></script>
+    <script src="../..//scripts/lib/calendar/WdatePicker.js"></script>
+    <script src="../..//scripts/lib/requirejs/require.js" data-main="inner/main"></script>
+  </head>
+  <body>
+    <div id="main-page">
+      <div class="manage-content">
+        <div id="inner-crumbs">
+          <div class="crumbs-container"><span>当前位置：</span><a href="#" class="crumbs-item">列表</a><span class="crumbs-item-drivers">></span><a class="crumbs-item">两行查询列表</a></div>
+        </div>
+        <div class="manage-content-container">
+          <div class="space space-t10"></div>
+          <div id="search">
+            <div class="search-container search-fold__two-line-search J-searchContainer">
+              <form action="http://127.0.0.1:8080/ZJP-ZJPORT-WEB/app/template.json">
+                <div class="search-fieldset">
+                  <div class="search-controller">
+                    <label class="field-label"><span>车牌号</span></label>
+                    <div class="field-group">
+                      <input type="text" name="aa" class="field-inp-item inp inp-search">
+                    </div>
+                  </div>
+                  <div class="search-controller">
+                    <label class="field-label"><span>发车日期</span></label>
+                    <div class="field-group field-group-timerange">
+                      <input type="text" onclick="WdatePicker()" name="starttime" value="2016-10-28" class="field-inp-item inp inp-search inp-time Wdate"><span class="field-group-timerange-to">至</span>
+                      <input type="text" onclick="WdatePicker()" name="endtime" class="field-inp-item inp inp-search inp-time Wdate">
+                    </div>
+                  </div>
+                  <div class="search-controller">
+                    <label class="field-label"><span>车牌号</span></label>
+                    <div class="field-group">
+                      <input type="text" name="bb" class="field-inp-item inp inp-search">
+                    </div>
+                  </div>
+                  <div class="search-controller">
+                    <label class="field-label"><span>账号</span></label>
+                    <div class="field-group field-group-select">
+                      <select name="cc" class="inp inp-search inp-select">
+                        <option>12345erfgrgfgdggf</option>
+                        <option>123456gdgdfgd</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="search-controller">
+                    <label class="field-label"><span>车牌号</span></label>
+                    <div class="field-group">
+                      <input type="text" name="dd" class="field-inp-item inp inp-search">
+                    </div>
+                  </div>
+                  <div class="search-controller">
+                    <label class="field-label"><span>车牌号</span></label>
+                    <div class="field-group">
+                      <input type="text" name="ee" class="field-inp-item inp inp-search">
+                    </div>
+                  </div>
+                </div>
+                <div class="search-operation"><a class="btn J-btn btn-search J-searchBtn"><span>查 询</span></a><a class="btn J-btn btn-search J-resetBtn"><span>重 置</span></a></div>
+              </form>
+            </div>
+          </div>
+          
+          <div class="result J-result">
+            <div class="result-operations"><a href="#" target="_self" class="btn btn-result J-btn"><i class="ico-font btn-result-ico">&#xe610;</i><span>增 加</span></a><a id="J-updateDialogTest" class="btn btn-result J-btn"><i class="ico-font btn-result-ico">&#xe604;</i><span>修 改</span></a><a id="J-deleteDialogTest" class="btn btn-result J-btn"><i class="ico-font btn-result-ico">&#xe60e;</i><span>删 除</span></a><a id="J-confirmDialogBtn" class="btn btn-result J-btn"><i class="ico-font btn-result-ico">&#xe608;</i><span>提 交</span></a><a id="J-approvalDialogBtn" class="btn btn-result J-btn"><i class="ico-font btn-result-ico">&#xe609;</i><span>审 批</span></a><a id="J-invalidDialogBtn" class="btn btn-result btn-result-sprites J-btn"><i class="ico-font-sprites btn-result-ico-distract"></i><span>作 废</span></a><a id="J-vettedDialogBtn" class="btn btn-result btn-result-sprites J-btn"><i class="ico-font-sprites btn-result-ico-checkOk"></i><span>审核通过</span></a><a id="J-unvettedDialogBtn" class="btn btn-result btn-result-sprites J-btn"><i class="ico-font-sprites btn-result-ico-checkFail"></i><span>审核不通过</span></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="../..//scripts/lib/autoheight/main.js"></script>
+</html>

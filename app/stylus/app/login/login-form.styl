@@ -1,0 +1,138 @@
+.site-login-container 
+	.site-login-controller 
+		.site-login-box
+			margin-top: -176px
+			.site-login-form-container
+				width: 312px
+				height: 353px
+				/.site-login-form
+					padding: 14px 29px 0;
+					box-sizing: border-box
+					/.site-login-form-title
+						height: 26px
+						line-height: @height
+						color: #1b1b1b
+						font-size: 14px
+						font-weight: bold
+						padding-bottom: 7px
+					/.site-login-form-error
+						position: relative
+						height: 26px
+						background: #fff3f3
+						line-height: 26px
+						color: #f14703
+						font-size: 12px
+						margin-bottom: 10px
+						padding-left: 30px
+						.ico
+							position: absolute
+							left: 8px
+							top: 6px
+							display: inline-block
+							width: 14px
+							height: 14px
+							background: url(../images/login/error.png) no-repeat
+					/.site-login-form-controller
+						position: relative
+						label
+							width: 38px
+							height: 38px
+							margin-top: 1px
+							margin-left: 1px
+							position: absolute
+							left: 0
+							top: 0
+							background: url(../images/login/login-icos.png) no-repeat
+							background-position: 0 0
+							&.password
+								background-position: 0 -39px
+						.site-login-form-inp
+							input
+								padding: 0
+								margin: 0
+								width: 100%
+								padding-left: 44px
+								height: 39px
+								line-height: 38px
+								box-sizing: border-box
+								border: 1px solid #bdbdbd
+								box-shadow: none
+								outline: none
+								font-size: 14px
+								margin-bottom: 17px
+								::placeholder
+									font-size: 12px
+					/.site-login-form-opera
+						margin-top: -7px
+						height: 26px
+						line-height: 26px
+						color: #535353
+						font-size: 12px
+						a
+							color: #535353
+							text-decoration: none
+							&:hover
+								text-decoration: underline
+								color: #f71
+						/.site-login-form-rigest
+							float: right
+					/.site-login-form-code
+						position: relative
+						/.site-login-form-codeinp
+							border: 1px solid #d7d7d7
+							text-align: center
+							width: 108px
+							height: 28px
+							line-height: @height
+							font-size: 12px
+							margin-right: 5px
+							vertical-align: middle
+							box-shadow: none
+							outline: none
+							::placeholder
+								color: #d7d7d7
+						/.site-login-form-codeimg
+							vertical-align: middle
+						/.site-login-form-coderefresh
+							position: absolute
+							right: 0
+							top: 14px
+							color: #2fa2c7
+							font-size: 12px
+					/.site-login-form-btn
+						padding-top: 15px
+						.login-btn
+							display: block
+							height: 40px
+							line-height: 40px
+							color: #fff
+							font-size: 16px
+							text-align: center
+							background: #3dbee8
+							border-radius: 3px
+							text-decoration: none
+							&:hover
+								background: #3dbee8 + 10%
+								text-decoration: none
+							&.submit-processing
+								background: #3dbee8 + 10%
+					/.site-login-form-number
+						color: #535353
+						font-size: 12px
+						line-height: 24px
+						padding-top: 8px
+						padding-left: 4px
+						span
+							color: #e62b00
+							font-size: 16px
+							font-weight: bold
+							
+//错误验证样式
+/.site-login-form-controller
+	.controller-tip
+		position: absolute
+		left: 44px
+		bottom: 0
+		.error
+			.tip-txt
+				color: #f14703

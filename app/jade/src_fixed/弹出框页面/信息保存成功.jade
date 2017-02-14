@@ -1,0 +1,22 @@
+extends ../../layout/inner.jade
+
+append head-script
+	script(src='#{jsRoot}/lib/calendar/WdatePicker.js')
+
+block search
+	.space.space-t10
+	include ../../public/inner/search.jade
+
+block modal
+	.modal.J-dialog-modal.modal_alert.modal_alert_ok.modal_open
+		.modal-header
+			h2
+				| 信息提示
+		.modal-body
+			span.modal-alert-ico
+			span.modal-alert-content| 信息保存成功!
+		.modal-foot
+			a.btn.btn__confirm(href="javascript:;", data-handler='0').J-dialogCancel
+				span.btn-txt
+					| 确认
+	.modal-cover

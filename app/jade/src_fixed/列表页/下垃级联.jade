@@ -1,0 +1,21 @@
+extends ../../layout/inner.jade
+
+append head-script
+	script(src='#{jsRoot}/lib/calendar/WdatePicker.js')
+
+block search
+
+block result
+
+block others
+	.selectController#cascadeDropdownListbox
+		label 省
+		select.inp.inp-select(data-params="../test.jspa")
+			option(value="") 请选择
+			option(value="01") 第一项
+			option(value="02") 第二项
+			option(value="03") 第三项
+		label 市
+		select.inp.inp-select(disabled)(data-params="../test.jspa")
+		label 区
+		select.inp.inp-select(disabled)
